@@ -14,4 +14,4 @@ exclude: ["README.md"]
 plugins:
         - jekyll-remote-theme
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
