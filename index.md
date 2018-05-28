@@ -7,7 +7,7 @@ layout: default
 
 
 <ul class="fa-ul">
- <li><a href="http://www.facebook.com/louiehan1015" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a></li>
+ <li><a href="http://www.facebook.com/louiehan1015" title="Facebook"><i class="fas fa-facebook fa-2x"></i></a></li>
  <li><a href="https://twitter.com/LouieHan1015" title="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a></li>
  <li><a href="http://weibo.com/louieh" title="Weibo"><i class="fab fa-weibo fa-2x"></i></a></li>
  <li><a href="http://blog.luyihan.me" title="Tumblr"><i class="fab fa-tumblr-square fa-2x"></i></a></li>
