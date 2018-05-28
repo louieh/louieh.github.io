@@ -12,6 +12,6 @@ layout: default
  <li><a href="http://weibo.com/louieh" title="Weibo"><i class="fab fa-weibo fa-2x"></i></a></li>
  <li><a href="http://blog.luyihan.me" title="Tumblr"><i class="fab fa-tumblr-square fa-2x"></i></a></li>
  <li><a href="https://www.instagram.com/louiehan" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a></li>
- <li><a href="mailto:louiehan1015@gmail.com" title="Email"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+ <li><a href="mailto:louie.han.work@gmail.com" title="Email"><i class="fas fa-envelope-square fa-2x"></i></a></li>
 </ul>
 
