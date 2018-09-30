@@ -1,2 +1,2 @@
-The theme from [front cover](https://github.com/dashingcode/front-cover).
+Theme: [front cover](https://github.com/dashingcode/front-cover).
 
