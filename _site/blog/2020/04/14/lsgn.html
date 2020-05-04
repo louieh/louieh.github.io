@@ -13,8 +13,8 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="lsgn" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="室友让我看一个 repo，跑一下里面的例子。lsgn" />
-<meta property="og:description" content="室友让我看一个 repo，跑一下里面的例子。lsgn" />
+<meta name="description" content="室友让我看一个 repo，跑一下里面的例子。" />
+<meta property="og:description" content="室友让我看一个 repo，跑一下里面的例子。" />
 <link rel="canonical" href="http://localhost:4000/blog/2020/04/14/lsgn.html" />
 <meta property="og:url" content="http://localhost:4000/blog/2020/04/14/lsgn.html" />
 <meta property="og:site_name" content="Luyi Han" />
@@ -24,7 +24,7 @@
 <meta property="twitter:title" content="lsgn" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"datePublished":"2020-04-14T01:44:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2020/04/14/lsgn.html"},"url":"http://localhost:4000/blog/2020/04/14/lsgn.html","description":"室友让我看一个 repo，跑一下里面的例子。lsgn","headline":"lsgn","dateModified":"2020-04-14T01:44:00-05:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"datePublished":"2020-04-14T01:44:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2020/04/14/lsgn.html"},"url":"http://localhost:4000/blog/2020/04/14/lsgn.html","description":"室友让我看一个 repo，跑一下里面的例子。","headline":"lsgn","dateModified":"2020-04-14T01:44:00-05:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -522,11 +522,9 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
     </div>
 
 
-<p>室友让我看一个 repo，跑一下里面的例子。<a href="https://github.com/luheng/lsgn">lsgn</a></p>
+<p>室友让我看一个 <a href="https://github.com/luheng/lsgn">repo</a>，跑一下里面的例子。</p>
 
-<p>不太清楚这是做什么的，貌似是训练什么模型的，要用到 Tensorflow，项目很老，两年前的。</p>
-
-<p>Requirements 有 Python 2.7，Tensorflow 1.8，tensorflow_hub，pyhocon (解析配置文件用的，安装的时候遇到依赖无法更新，报“Cannot uninstall ‘pyparsing’. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.” 手动装新版解决 “sudo pip install -I pyparsing==2.2.0”)</p>
+<p>比较古老的 Tensorflow 项目。Requirements 有 Python 2.7，Tensorflow 1.8，tensorflow_hub，pyhocon (解析配置文件用的，安装的时候遇到依赖无法更新，报“Cannot uninstall ‘pyparsing’. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.” 手动装新版解决 “sudo pip install -I pyparsing==2.2.0”)</p>
 
 <p>首先用 Pip 直接装 Tensorflow 貌似是2.x，之后运行 <a href="https://github.com/luheng/lsgn/blob/master/decoder.py">decoder.py</a>， 在 <a href="https://github.com/luheng/lsgn/blob/master/util.py">util.py</a> 222 行：</p>
 
