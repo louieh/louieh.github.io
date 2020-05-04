@@ -9,22 +9,20 @@
     <meta name=author content="Luyi Han">
 
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Homebrew | Luyi Han</title>
+<title>About | Luyi Han</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Homebrew" />
+<meta property="og:title" content="About" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="事情起因要从新冠状病毒说起…其实是从「回形针」发布了一个关于这次病毒的视频，想用「youtube-dl」下载，合并音频和视频需要 ffmpeg，记得之前装过，但是实际上并没有，于是开始用 Homebrew 装 ffmpeg，brew install 报没有权限，加上 sudo 又被告知不能加 sudo…好无解。其实之前就遇到过这个问题，觉得麻烦就一直没管。" />
-<meta property="og:description" content="事情起因要从新冠状病毒说起…其实是从「回形针」发布了一个关于这次病毒的视频，想用「youtube-dl」下载，合并音频和视频需要 ffmpeg，记得之前装过，但是实际上并没有，于是开始用 Homebrew 装 ffmpeg，brew install 报没有权限，加上 sudo 又被告知不能加 sudo…好无解。其实之前就遇到过这个问题，觉得麻烦就一直没管。" />
-<link rel="canonical" href="https://louieh.github.io/Homebrew/" />
-<meta property="og:url" content="https://louieh.github.io/Homebrew/" />
+<meta name="description" content="A blog about technology and stuff related" />
+<meta property="og:description" content="A blog about technology and stuff related" />
+<link rel="canonical" href="https://louieh.github.io/about.html" />
+<meta property="og:url" content="https://louieh.github.io/about.html" />
 <meta property="og:site_name" content="Luyi Han" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-02T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Homebrew" />
+<meta property="twitter:title" content="About" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"datePublished":"2020-02-02T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://louieh.github.io/Homebrew/"},"url":"https://louieh.github.io/Homebrew/","description":"事情起因要从新冠状病毒说起…其实是从「回形针」发布了一个关于这次病毒的视频，想用「youtube-dl」下载，合并音频和视频需要 ffmpeg，记得之前装过，但是实际上并没有，于是开始用 Homebrew 装 ffmpeg，brew install 报没有权限，加上 sudo 又被告知不能加 sudo…好无解。其实之前就遇到过这个问题，觉得麻烦就一直没管。","headline":"Homebrew","dateModified":"2020-02-02T00:00:00-06:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"https://louieh.github.io/about.html","description":"A blog about technology and stuff related","headline":"About","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -50,7 +48,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="https://louieh.github.io/Homebrew/">
+    <link rel="canonical" href="https://louieh.github.io/about.html">
     <link rel="alternate" type="application/rss+xml" title="" href="https://louieh.github.io/feed.xml" />
 
     <style>
@@ -453,7 +451,9 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
     <div class="wrapper-normal">
         
-            <div class="post">
+            
+                <div class="page about">
+            
         
 
             
@@ -486,10 +486,6 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
         
             
-                <li class="item">
-                    <a class="link" href="https://louieh.github.io/about">About</a>
-                </li>
-            
         
 
         
@@ -498,255 +494,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 
 
-
-
-<h1 class="title">Homebrew</h1>
-
-<span class="date">
-    <time datetime="02-02-2020">Sunday. February 02, 2020</time>
-     - <span class="reading-time" title="Estimated read time">
-    
-
-    
-        1 min
-    
-</span>
-
-</span>
-
-
-    <div class="post-tags">
-        
-            <a class="item" href="https://louieh.github.io/tags/#生命在于折腾">生命在于折腾</a>
-        
-    </div>
-
-
-<p>事情起因要从新冠状病毒说起…其实是从「回形针」发布了一个关于这次病毒的视频，想用「youtube-dl」下载，合并音频和视频需要 ffmpeg，记得之前装过，但是实际上并没有，于是开始用 Homebrew 装 ffmpeg，brew install 报没有权限，加上 sudo 又被告知不能加 sudo…好无解。其实之前就遇到过这个问题，觉得麻烦就一直没管。</p>
-
-<p>经查询需修改 /usr/local 权限：</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> <span class="nt">-R</span> <span class="si">$(</span><span class="nb">whoami</span><span class="si">)</span>:wheel /usr/local/<span class="k">*</span>
-</code></pre></div></div>
-
-<p>修改完之后 ffmpag 是装上了，tmux开始报错:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>tmux
-dyld: Library not loaded: /usr/local/lib/libevent-2.0.5.dylib
-Referenced from: /usr/local/Cellar/tmux/1.9a/bin/tmux
-Reason: image not found
-Trace/BPT <span class="nb">trap</span>: 5
-</code></pre></div></div>
-
-<p>于是以为是权限问题便将权限改回去：</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chown</span> <span class="nt">-R</span> root:wheel /usr/local/<span class="k">*</span>
-</code></pre></div></div>
-
-<p>btw: /usr/local 的权限是不能动的，修改了半天 /usr/local 的权限不成功，最后 history 发现之前改的是 /usr/local/* 其实之前可以用是因为 10.12 Sierra 开始将 /usr/local 目录所有者从 user 变为了 root 而 Homebrew 将 /usr/local 作为主目录。https://www.jianshu.com/p/fb7226fbe46e</p>
-
-<p>改回去时候 tmux 依然不行。于是开始针对 tmux 的报错解决，查到需要 brew unlink &amp;&amp; link libevent，但是又遇到最初的问题。。。最后只能重装 Homebrew 解决。卸载命令执行到一半想起来忘记备份已安装的东西于是终止，发现 brew 命令已经没了，继续执行卸载也失败….只能直接安装。</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/usr/bin/ruby <span class="nt">-e</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> &lt;https://raw.githubusercontent.com/Homebrew/install/master/uninstall&gt;<span class="si">)</span><span class="s2">"</span>
-/usr/bin/ruby <span class="nt">-e</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> &lt;https://raw.githubusercontent.com/Homebrew/install/master/install&gt;<span class="si">)</span><span class="s2">"</span>
-</code></pre></div></div>
-
-<p>安装的时候还是需要更改 /usr/local/* 的权限</p>
-
-<p>安装完成后，安装 tmux，tmux 安装完成，运行直接 [exited]…查了半天都在说是 conf 里某条命令有问题，删除 conf 后问题依旧，最后发现是已经有个 tmux 进程在…日…kill 掉，问题解决。</p>
-
-<p>虽然现在暂时没发现什么，但是重装了 Homebrew、修改了 /usr/local/* 权限不知道会导致什么潜在问题。</p>
-
-<p>真的是没事儿找事儿了。</p>
-
-
-
-    <div class="blog-navigation">
-        
-            <a class="prev" href="https://louieh.github.io/Debug-Lightsail-yum-update/">&laquo; Debug: Lightsail - yum update</a>
-        
-        
-            <a class="next" href="https://louieh.github.io/lsgn/">lsgn &raquo;</a>
-        
-    </div>
-
-
-
-    <div class="related">
-    
-    
-        
-        
-            
-                
-            
-        
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-        
-            
-                
-            
-        
-    
-        
-        
-            
-                
-                    
-                    <h4>Related Posts</h4>
-                    <ul>
-                    
-                    <li class="relatedPost">
-                        <a href="https://louieh.github.io/lsgn/">lsgn
-                        
-                        </a>
-                    </li>
-                    
-                    
-                
-            
-        
-    
-        
-        
-            
-                
-            
-        
-    
-        
-        
-            
-                
-                    
-                    <li class="relatedPost">
-                        <a href="https://louieh.github.io/Debug-Lightsail-yum-update/">Debug: Lightsail - yum update
-                        
-                        </a>
-                    </li>
-                    
-                    
-                
-            
-        
-    
-        
-        
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-        
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-        
-            
-                
-            
-        
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-        
-            
-                
-            
-        
-    
-        
-        
-            
-                
-            
-        
-    
-    
-        </ul>
-    
-</div>
-
-
-
-
-    <section class="author">
-    <div class="toleft">
-        <img
-            class="selfie"
-            src="https://louieh.github.io/"
-            alt=""
-        />
-    </div>
-
-    <div class="toright">
-        <h4 class="name"></h4>
-        <p class="bio"></p>
-
-        <div class="share">
-            <!-- Note: Only use three share links if your site width is set to large -->
-            <!-- If site width is set to normal, you may choose any two share links -->
-            <a
-                class="twitter"
-                href="https://twitter.com/intent/tweet?text=https://louieh.github.io/Homebrew/ - Homebrew by @"
-            >
-                <svg class="icon icon-twitter">
-                    <use xlink:href="#icon-twitter"></use></svg
-                ><span class="icon-twitter">Tweet</span>
-            </a>
-
-            <a
-                class="facebook"
-                href="javascript:void(0)"
-                onclick="window.open('https://facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"
-            >
-                <svg class="icon icon-facebook">
-                    <use xlink:href="#icon-facebook"></use></svg
-                ><span class="icon-facebook-rect">Share</span>
-            </a>
-
-            <!-- <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://louieh.github.io/Homebrew/&amp;title=Homebrew&amp;summary=&amp;source=https://louieh.github.io" target="_blank">
-                <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg><span class="icon-linkedin">Share</span>
-            </a> -->
-
-            <!-- <a class="reddit" href="https://reddit.com/submit?url=https://louieh.github.io/Homebrew/&amp;title=Homebrew" target="_blank">
-                <svg class="icon icon-reddit"><use xlink:href="#icon-reddit"></use></svg><span class="icon-reddit">Share</span>
-            </a> -->
-        </div>
-    </div>
-</section>
-
-
-
-
+<p>:)</p>
 
 
 <footer class="footer-main">
@@ -776,6 +524,38 @@ Trace/BPT <span class="nb">trap</span>: 5
     xmlns:xlink="http://www.w3.org/1999/xlink"
 >
     <defs>
+        <symbol id="icon-tumblr" viewBox="0 0 504 504">
+            <title>tumblr</title>
+            <path d="M377.6,0H126C56.8,0,0,56.8,0,126.4V378c0,69.2,56.8,126,126,126h251.6c69.6,0,126.4-56.8,126.4-126.4V126.4
+			C504,56.8,447.2,0,377.6,0z M312.4,405.2c-10.4,2.4-22,4-34,4c-13.6,0-22-2-32.8-5.6c-10.4-3.6-19.6-8.8-27.2-15.6
+			c-7.6-6.8-12-14-14.8-21.6c-2.8-7.6-3.6-18.4-3.6-32.8V224h-44v-44.8c12-4,26.4-9.6,34.8-17.2c8.4-7.6,15.6-16,20.8-26.4
+			c5.2-10.4,9.2-23.6,10.8-39.6H264v72h72v56h-72v80.4c0,18.4,0.4,28.8,2,34c2,5.2,6.8,10.4,11.6,13.6c6.8,4,15.2,6.4,23.6,6.4
+			c15.2,0,30.4-5.2,46.4-15.6V392h0.4C332,398.4,322.8,402.8,312.4,405.2z"/>
+        </symbol>
+
+        <symbol id="icon-weibo" viewBox="0 0 97.75 97.75">
+            <title>weibo</title>
+            <path d="M48.875,0C21.883,0,0,21.883,0,48.875S21.883,97.75,48.875,97.75S97.75,75.867,97.75,48.875S75.867,0,48.875,0z
+            M43.332,76.779c-14.294,0-28.904-6.928-28.904-18.32c0-5.957,3.773-12.844,10.271-19.344c8.68-8.674,18.799-12.627,22.604-8.818
+           c1.679,1.678,1.841,4.582,0.763,8.051c-0.563,1.748,1.639,0.779,1.639,0.783c7.016-2.938,13.135-3.109,15.37,0.086
+           c1.192,1.703,1.079,4.09-0.021,6.859c-0.509,1.273,0.157,1.473,1.127,1.762c3.952,1.227,8.351,4.189,8.351,9.412
+           C74.531,65.893,62.068,76.779,43.332,76.779z M69.206,40.553c0.463-1.428,0.172-3.055-0.905-4.25
+           c-1.076-1.191-2.668-1.645-4.136-1.334v-0.002c-1.224,0.266-2.431-0.52-2.69-1.742c-0.266-1.229,0.518-2.436,1.744-2.697
+           c3.002-0.637,6.254,0.291,8.455,2.732c2.208,2.443,2.797,5.771,1.854,8.689c-0.385,1.195-1.664,1.846-2.857,1.465
+           c-1.193-0.389-1.846-1.67-1.461-2.861H69.206z M82.438,44.828c0,0.002,0,0.008,0,0.01c-0.449,1.383-1.937,2.141-3.321,1.693
+           c-1.39-0.447-2.148-1.932-1.699-3.32l-0.001-0.004c1.377-4.26,0.504-9.119-2.71-12.682c-3.218-3.563-7.96-4.926-12.343-3.994
+           c-1.426,0.305-2.826-0.605-3.131-2.029s0.604-2.826,2.029-3.131h0.002c6.16-1.309,12.834,0.602,17.357,5.619
+           C83.148,32,84.37,38.832,82.438,44.828z"/>
+       <path d="M43.444,57.424c-0.678-0.27-1.526,0.057-1.924,0.723c-0.386,0.672-0.173,1.435,0.507,1.713
+           c0.69,0.285,1.573-0.043,1.972-0.727C44.38,58.447,44.133,57.676,43.444,57.424z"/>
+       <path d="M40.688,45.58c-11.402,1.129-20.051,8.111-19.311,15.598c0.741,7.488,10.588,12.643,21.991,11.518
+           c11.405-1.127,20.05-8.11,19.312-15.602C61.939,49.607,52.096,44.451,40.688,45.58z M50.695,63.24
+           c-2.327,5.264-9.021,8.07-14.702,6.24c-5.482-1.771-7.803-7.187-5.402-12.063c2.356-4.783,8.492-7.487,13.918-6.074
+           C50.126,52.795,52.992,58.094,50.695,63.24z"/>
+       <path d="M39.091,59.229c-1.767-0.739-4.049,0.021-5.138,1.73c-1.104,1.715-0.587,3.76,1.167,4.559
+           c1.779,0.813,4.141,0.041,5.244-1.719C41.448,62.02,40.876,59.99,39.091,59.229z"/>
+        </symbol>
+
         <symbol id="icon-rss" viewBox="0 0 1024 1024">
             <title>rss</title>
             <path

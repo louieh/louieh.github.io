@@ -19,7 +19,7 @@ resume-url: https://google.com/?q=my+resume
 url: https://louieh.github.io
 # your url: https://USERNAME.github.io
 
-permalink: /:title/
+#permalink: /:title/
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
@@ -34,14 +34,17 @@ disqus:
   categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: louiehan1015
-twitter: LouieHan1015
+weibo: louieh
 instagram: louiehan
-# pinterest: mypinterest
+twitter: LouieHan1015
+facebook: louiehan1015
 linkedin: luyi-han
+tumblr: louiehan
+github: louieh
+email: louie.han.work@gmail.com
+# pinterest: mypinterest
 # youtube: myyoutube
 # spotify: myspotify
-github: louieh
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
@@ -50,7 +53,7 @@ github: louieh
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: louie.han.work@gmail.com
+
 
 authors:
   johndoe:
