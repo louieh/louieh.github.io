@@ -8,6 +8,7 @@ description: A blog about technology and stuff related
 # if it's an external image, update below for true
 # better with square images
 external-image: false
+about-picture: assets/images/IMG_3673.JPG
 picture: assets/images/profile.jpeg
 
 # If you want to include your resume, set to true
@@ -17,7 +18,6 @@ resume-external: true
 resume-url: https://google.com/?q=my+resume
 
 url: https://louieh.github.io
-# your url: https://USERNAME.github.io
 
 #permalink: /:title/
 
