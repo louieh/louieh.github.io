@@ -8,6 +8,6 @@ headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
 category: project
-externalLink: http://fakecoursebook.info
+externalLink: http://course.luyihan.me
 ---
 
